@@ -17,10 +17,10 @@ services:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: ""  # Dejar la contraseña vacía, ya que no tienes contraseña
       MYSQL_DATABASE: flaskcrud
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
+      MYSQL_USER: root  # Usuario 'root'
+      MYSQL_PASSWORD: ""  # No hay contraseña
     ports:
       - "3306:3306"
     volumes:
